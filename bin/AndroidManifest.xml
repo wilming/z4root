@@ -1,0 +1,41 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+	package="com.z4mod.z4root2" android:versionName="1.3.0"
+	android:versionCode="6">
+	<uses-permission android:name="android.permission.WAKE_LOCK" />
+	<uses-permission android:name="android.permission.INTERNET" />
+	<application android:icon="@drawable/z4small"
+		android:label="@string/z4root">
+		<activity android:name="z4root" android:theme="@style/Theme"
+			android:launchMode="singleInstance" android:label="z4root"
+			android:finishOnTaskLaunch="true" android:multiprocess="true"
+			android:process=":three" android:screenOrientation="portrait">
+			<intent-filter>
+				<action android:name="android.intent.action.MAIN" />
+				<category android:name="android.intent.category.LAUNCHER" />
+			</intent-filter>
+		</activity>
+		<activity android:name="Phase1" android:theme="@style/Theme"
+			android:launchMode="singleInstance" android:label="Phase1"
+			android:finishOnTaskLaunch="true" android:multiprocess="true"
+			android:process=":three" android:screenOrientation="portrait">
+		</activity>
+		<activity android:name="Phase2" android:theme="@style/Theme"
+			android:launchMode="singleInstance" android:label="Phase2"
+			android:finishOnTaskLaunch="true" android:multiprocess="true"
+			android:process=":two" android:screenOrientation="portrait">
+		</activity>
+		<activity android:name="PhaseRemove" android:theme="@style/Theme"
+			android:launchMode="singleInstance" android:label="PhaseRemove"
+			android:finishOnTaskLaunch="true" android:multiprocess="true"
+			android:process=":four" android:screenOrientation="portrait">
+		</activity>
+		<activity android:name="com.admob.android.ads.AdMobActivity"
+			android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+			android:configChanges="orientation|keyboard|keyboardHidden" />
+		<receiver android:process=":remote" android:name="AlarmReceiver"></receiver>
+
+		<meta-data android:value="a14ce61b36e16c1" android:name="ADMOB_PUBLISHER_ID" />
+		<meta-data android:value="a14ce61b36e16c1" android:name="ADMOB_INTERSTITIAL_PUBLISHER_ID" />
+	</application>
+	<uses-sdk android:minSdkVersion="4" />
+</manifest>

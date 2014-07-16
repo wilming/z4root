@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+	<item android:title="About" android:id="@+id/about"></item>
+	<item android:id="@+id/disableads" android:title="Disable Ads"></item>
+</menu>

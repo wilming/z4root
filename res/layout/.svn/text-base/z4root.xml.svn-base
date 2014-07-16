@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" android:layout_height="fill_parent"
+	android:background="@drawable/bg">
+
+		<ImageView android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:layout_alignParentTop="true"
+			android:layout_centerHorizontal="true" android:src="@drawable/z4small" />
+
+		<Button android:layout_width="wrap_content" android:id="@+id/rootbutton"
+			android:layout_height="wrap_content" android:layout_centerInParent="true"
+			android:text="Permanent Root" android:background="@drawable/menu_bg"
+			android:textColor="#FFFFFF" android:layout_margin="10dp" android:width="200dp" />
+
+		<Button android:layout_width="wrap_content" android:id="@+id/unrootbutton"
+			android:layout_height="wrap_content" android:layout_centerHorizontal="true"
+			android:layout_below="@id/rootbutton" android:text="Un-root"
+			android:background="@drawable/menu_bg" android:textColor="#FFFFFF"
+			android:layout_margin="10dp" android:visibility="gone" android:width="200dp" />
+			
+		<Button android:layout_width="wrap_content" android:id="@+id/temprootbutton"
+			android:layout_height="wrap_content" android:layout_centerHorizontal="true"
+			android:layout_above="@id/rootbutton" android:text="Temporary Root"
+			android:background="@drawable/menu_bg" android:textColor="#FFFFFF"
+			android:layout_margin="10dp" android:width="200dp" />
+
+		<TextView android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:text="Copyright © 2010 RyanZA"
+			android:textColor="#FFFFFF" android:layout_centerHorizontal="true"
+			android:gravity="center" android:layout_alignParentBottom="true"
+			android:padding="5dp" android:id="@+id/copyright" />
+
+		<TextView android:id="@+id/detailtext" android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="This will root your device, and enable you to supply system level access to applications that request it. Busybox will also be installed."
+			android:textColor="#FFFFFF" android:layout_centerHorizontal="true"
+			android:gravity="center" android:padding="5dp" android:layout_above="@id/copyright" />
+
+</RelativeLayout>
